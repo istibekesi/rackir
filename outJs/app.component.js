@@ -11,15 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var header_component_1 = require('./header.component');
 var footer_component_1 = require('./footer.component');
-var user_header_component_1 = require('./user/user-header.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <rackir-header>Loading header...</rackir-header>\n        <div class=\"container\">\n          <div class=\"page-header\" id=\"banner\">\n          </div>\n          <br/>\n          <user-header></user-header>\n\n        </div>\n        <rackir-footer>Loading footer...</rackir-footer>\n    ",
-            directives: [header_component_1.HeaderComponent, footer_component_1.FooterComponent, user_header_component_1.UserHeaderComponent]
+            template: "\n        <rackir-header>Loading header...</rackir-header>\n        <div class=\"container\">\n          <div class=\"page-header\" id=\"banner\">\n          </div>\n          My First Angular 2 App\n          Hello {{1+1}}\n        </div>\n        <rackir-footer>Loading footer...</rackir-footer>\n    ",
+            directives: [header_component_1.HeaderComponent, footer_component_1.FooterComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
