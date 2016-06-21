@@ -16,7 +16,7 @@ import {RackirCarSeatComponent} from './rackir-seat.component';
       
       <br/><br/>
       
-      <div style="width:300px;border-style:solid;border-width:0px;">
+      <div style="width:300px;height:600px;border-style:solid;border-width:1px;">
       
         <svg id="svg1" height="100%" width="100%" [attr.viewBox]="viewBox(200)" preserveAspectRatio="xMidYMin">
           <g>
@@ -34,6 +34,7 @@ import {RackirCarSeatComponent} from './rackir-seat.component';
         </svg>
 
     </div>
+  </div>
   `,
     styles : [`
     .car-rect {

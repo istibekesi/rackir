@@ -10,14 +10,15 @@ import { RackirCarComponent } from './car/rackir-car.component';
         
         
         <div class="container">
-          <div class="page-header" id="banner">
-          </div>
-          My First Angular 2 App
-          Hello {{1+1}}
-        </div>
         
-        <div>
+          <div class="page-header" id="banner"></div>
+          
+          <h2> My First Angular 2 App</h2>
+        
+          <div>
             <rackir-car>Loading car...</rackir-car>
+          </div>
+          
         </div>
         
         <rackir-footer>Loading footer...</rackir-footer>
