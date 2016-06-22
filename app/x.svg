@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <svg version="1.1"
-     baseProfile="full"
      xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     xmlns:ev="http://www.w3.org/2001/xml-events">
-    <title>Text Pattern Fill Example</title>
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
     <defs>
         <pattern id="img1" patternUnits="userSpaceOnUse" width="125" height="125">
             <image xlink:href="https://instagram.fbud1-1.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/c0.135.1080.1080/13413244_1043651565710149_835427729_n.jpg" x="0" y="0"

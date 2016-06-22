@@ -1,4 +1,3 @@
-import { ISeat } from './iseat';
 import {ICar} from './icar';
 import {ISeat} from './iseat';
 import {IUser} from '../../user/model/iuser';

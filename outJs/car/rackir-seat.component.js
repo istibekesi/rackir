@@ -9,11 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var car_service_1 = require('./car.service');
 var RackirCarSeatComponent = (function () {
-    function RackirCarSeatComponent() {
+    function RackirCarSeatComponent(carService) {
+        this.carService = carService;
+        var avatar = this.carService.getRandomInstaAvatar();
+        this.index = avatar.id;
+        this.avatarSrc = avatar.src;
     }
+    RackirCarSeatComponent.prototype.getFillUrl = function () {
+        return 'url(#' + this.index + ')';
+    };
     RackirCarSeatComponent.prototype.ngOnInit = function () {
-        this.avatarSrc = 'https://scontent-vie1-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.135.1080.1080/13413244_1043651565710149_835427729_n.jpg';
     };
     __decorate([
         core_1.Input(), 
@@ -26,12 +33,12 @@ var RackirCarSeatComponent = (function () {
     RackirCarSeatComponent = __decorate([
         core_1.Component({
             selector: '[rackir-car-seat]',
-            providers: [],
-            template: "\n    \n    <svg:g>\n        <svg:defs>\n            <svg:pattern id=\"avatar\" patternUnits=\"userSpaceOnUse\" width=\"100\" height=\"100\">\n                <svg:image [attr.xlink:href]=\"avatarSrc\" x=\"0\" y=\"0\" width=\"100\" height=\"100\" />\n            </svg:pattern>\n        </svg:defs>\n        \n        <svg:rect [attr.x]=\"attrX\" [attr.y]=\"attrY\" rx=\"1\" ry=\"1\" width=\"25\" height=\"25\" class=\"seat\" fill=\"url(#avatar)\">\n        </svg:rect>\n        <svg:text [attr.x]=\"attrX\" [attr.y]=\"attrY\" fill=\"blue\" > {{avatarSrc}} </svg:text>\n    </svg:g>\n    \n  ",
-            styles: ["\n    .seat {\n      fill:none;\n      stroke: #2c3e50;\n      stroke-width:2;\n    }\n    .seat:hover {\n      box-shadow: 10px 10px 5px grey;\n    }\n  "],
-            directives: []
+            template: "\n    \n    <svg:g>\n        <svg:defs>\n            <svg:pattern [attr.id]=\"index\" patternUnits=\"objectBoundingBox\" width=\"25\" height=\"25\">\n                <svg:image [attr.xlink:href]=\"avatarSrc\" x=\"0\" y=\"0\" width=\"25\" height=\"25\" />\n            </svg:pattern>\n        </svg:defs>\n        \n        <svg:rect [attr.x]=\"attrX\" [attr.y]=\"attrY\" rx=\"1\" ry=\"1\" width=\"25\" height=\"25\" class=\"seat\" [attr.fill]=\"getFillUrl()\">\n        </svg:rect>\n    </svg:g>\n    \n  ",
+            styles: ["\n    .seat {\n      stroke: #2c3e50;\n      stroke-width:2;\n    }\n    .seat:hover {\n      box-shadow: 10px 10px 5px grey;\n    }\n  "],
+            directives: [],
+            providers: []
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [car_service_1.CarService])
     ], RackirCarSeatComponent);
     return RackirCarSeatComponent;
 }());

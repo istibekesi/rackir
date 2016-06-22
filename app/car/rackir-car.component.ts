@@ -18,7 +18,10 @@ import {RackirCarSeatComponent} from './rackir-seat.component';
       
       <div style="width:300px;height:600px;border-style:solid;border-width:1px;">
       
-        <svg id="svg1" height="100%" width="100%" [attr.viewBox]="viewBox(200)" preserveAspectRatio="xMidYMin">
+        <svg version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" 
+            id="svg1" height="100%" width="100%" [attr.viewBox]="viewBox(200)" preserveAspectRatio="xMidYMin">
           <g>
             <defs>
             </defs>
@@ -28,6 +31,7 @@ import {RackirCarSeatComponent} from './rackir-seat.component';
             
             <g rackir-car-seat *ngFor="let s of seats; let i = index" 
               [attrX]="seatX(i)" [attrY]="seatY(i)"></g>
+              
             
             
           </g>
