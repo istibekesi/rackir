@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { RackirCarComponent } from './car/rackir-car.component';
-import { TmpRandomComp } from './car/tmpRandomComp.component';
 import { CarService } from './car/car.service';
 
 @Component({
@@ -23,8 +22,10 @@ import { CarService } from './car/car.service';
         </div>
         
         <rackir-footer>Loading footer...</rackir-footer>
+        
+        
     `,
-    directives: [HeaderComponent, FooterComponent, RackirCarComponent, TmpRandomComp],
+    directives: [HeaderComponent, FooterComponent, RackirCarComponent],
     providers : [CarService]
 })
 export class AppComponent { }

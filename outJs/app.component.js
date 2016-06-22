@@ -12,7 +12,6 @@ var core_1 = require('@angular/core');
 var header_component_1 = require('./header.component');
 var footer_component_1 = require('./footer.component');
 var rackir_car_component_1 = require('./car/rackir-car.component');
-var tmpRandomComp_component_1 = require('./car/tmpRandomComp.component');
 var car_service_1 = require('./car/car.service');
 var AppComponent = (function () {
     function AppComponent() {
@@ -20,8 +19,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <rackir-header>Loading header...</rackir-header>\n        \n        <div class=\"container\">\n        \n          <div class=\"page-header\" id=\"banner\"></div>\n          \n          <h2> My First Angular 2 App</h2>\n        \n          <div>\n            <rackir-car>Loading car...</rackir-car>\n          </div>\n          \n        </div>\n        \n        <rackir-footer>Loading footer...</rackir-footer>\n    ",
-            directives: [header_component_1.HeaderComponent, footer_component_1.FooterComponent, rackir_car_component_1.RackirCarComponent, tmpRandomComp_component_1.TmpRandomComp],
+            template: "\n        <rackir-header>Loading header...</rackir-header>\n        \n        <div class=\"container\">\n        \n          <div class=\"page-header\" id=\"banner\"></div>\n          \n          <h2> My First Angular 2 App</h2>\n        \n          <div>\n            <rackir-car>Loading car...</rackir-car>\n          </div>\n          \n        </div>\n        \n        <rackir-footer>Loading footer...</rackir-footer>\n        \n        \n    ",
+            directives: [header_component_1.HeaderComponent, footer_component_1.FooterComponent, rackir_car_component_1.RackirCarComponent],
             providers: [car_service_1.CarService]
         }), 
         __metadata('design:paramtypes', [])
