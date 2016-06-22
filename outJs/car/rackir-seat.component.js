@@ -18,7 +18,7 @@ var RackirCarSeatComponent = (function () {
         this.avatarSrc = avatar.src;
     }
     RackirCarSeatComponent.prototype.getFillUrl = function () {
-        return 'url(#' + this.index + ')';
+        return "url(#" + this.index + ")";
     };
     RackirCarSeatComponent.prototype.ngOnInit = function () {
     };

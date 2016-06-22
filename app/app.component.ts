@@ -22,12 +22,6 @@ import { CarService } from './car/car.service';
           
         </div>
         
-        <tmp-random-comp>loading</tmp-random-comp>                
-        <tmp-random-comp>loading</tmp-random-comp>
-        <tmp-random-comp>loading</tmp-random-comp>
-        
-
-        
         <rackir-footer>Loading footer...</rackir-footer>
     `,
     directives: [HeaderComponent, FooterComponent, RackirCarComponent, TmpRandomComp],

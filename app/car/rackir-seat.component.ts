@@ -37,7 +37,7 @@ export class RackirCarSeatComponent implements OnInit {
     index : string;
 
     getFillUrl() : string {
-        return 'url(#'+ this.index + ')';
+        return `url(#${this.index})`;
     }
 
     constructor(private carService:CarService) {
